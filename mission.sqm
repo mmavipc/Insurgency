@@ -17,8 +17,6 @@ class Mission
 	addOnsAuto[]=
 	{
 		"cacharacters_e",
-		"acex_usnavy_veh_ah1",
-		"ace_c_vehicle",
 		"takistan"
 	};
 	randomSeed=13058407;
@@ -43,7 +41,7 @@ class Mission
 				class Item0
 				{
 					position[]={8291.7578,296.04001,1940.8096};
-					id=1;
+					id=0;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
@@ -53,7 +51,7 @@ class Mission
 				class Item1
 				{
 					position[]={8310.8691,296.04001,1935.7025};
-					id=2;
+					id=1;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
@@ -64,7 +62,7 @@ class Mission
 					position[]={8293.9365,296.04001,1931.749};
 					azimut=240;
 					special="NONE";
-					id=4;
+					id=2;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
@@ -73,7 +71,7 @@ class Mission
 				class Item3
 				{
 					position[]={8288.3105,296.04001,1920.0966};
-					id=5;
+					id=3;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
@@ -82,7 +80,7 @@ class Mission
 				class Item4
 				{
 					position[]={8302.9561,296.04001,1922.2992};
-					id=6;
+					id=4;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
@@ -91,7 +89,7 @@ class Mission
 				class Item5
 				{
 					position[]={8314.4893,296.04001,1925.1503};
-					id=7;
+					id=5;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
@@ -100,73 +98,12 @@ class Mission
 				class Item6
 				{
 					position[]={8320.709,296.04001,1933.3137};
-					id=8;
+					id=6;
 					side="WEST";
 					vehicle="US_Soldier_EP1";
 					player="PLAY CDG";
 					skill=0.60000002;
 				};
-			};
-		};
-	};
-	class Vehicles
-	{
-		items=2;
-		class Item0
-		{
-			position[]={8344.2471,296.04001,1969.6885};
-			id=0;
-			side="EMPTY";
-			vehicle="ACE_AH1Z_AGM_AGM_D";
-			skill=0.60000002;
-		};
-		class Item1
-		{
-			position[]={8262.418,296.04001,1915.8433};
-			azimut=240;
-			special="NONE";
-			id=3;
-			side="EMPTY";
-			vehicle="ACE_A10_Mk82";
-			skill=0.60000002;
-		};
-	};
-	class Markers
-	{
-		items=2;
-		class Item0
-		{
-			position[]={8301.4141,296.04001,1926.4625};
-			name="anti_tk1";
-			markerType="ELLIPSE";
-			type="Empty";
-			a=50;
-			b=50;
-		};
-		class Item1
-		{
-			position[]={7979.48,296.04001,1763.2667};
-			name="anti_tk2";
-			markerType="ELLIPSE";
-			type="Empty";
-			a=50;
-			b=50;
-		};
-	};
-	class Sensors
-	{
-		items=1;
-		class Item0
-		{
-			position[]={8416.0459,296.01297,2001.3374};
-			activationBy="ALPHA";
-			activationType="NOT PRESENT";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="_shit = [] execVM ""script.sqf""";
-			class Effects
-			{
 			};
 		};
 	};
