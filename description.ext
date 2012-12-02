@@ -1,0 +1,63 @@
+class Header
+{
+	gameType = COOP;
+};
+respawn=2;
+/*class cfgFunctions
+{
+	class MGO
+	{
+		class MySQL
+		{
+			class SQL_Connect
+			{
+				description = "Connect to a MySQL server";
+			};
+			class SQL_Query
+			{
+				description = "Execute a query";
+			};
+			class SQL_StoreResult
+			{
+				description = "Stores the result of a query";
+			};
+			class SQL_FetchRow
+			{
+				description = "Fetches a row from a stored result, returns nil if no more rows";
+			};
+			class SQL_FreeResult
+			{
+				description = "Frees the memory that was allocated to a result set.";
+			};
+			class SQL_Close
+			{
+				description = "Closes a connection.";
+			};
+			class SQL_Escape
+			{
+				description = "Used to sanitize data before it goes into a query";
+			};
+		};
+		class General
+		{
+			class Call_Ext
+			{
+				description = "Calls the extension";
+			};
+		};
+		class Permissions
+		{
+			class Perm_Init
+			{
+				description = "Call this on server mission init.";
+			};
+		};
+		class Tracking
+		{
+			class Tracking_Init
+			{
+				description = "Tracking init for the server.";
+			};
+		};
+	};
+};*/
