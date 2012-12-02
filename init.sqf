@@ -1,4 +1,3 @@
-#include "defines.sqf"
 startLoadingScreen ["Insurgency is loading....."];
 if(isServer) then
 {
