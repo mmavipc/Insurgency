@@ -27,7 +27,7 @@ while{_i != -1} do
 			{
 				if(!(_grid in protectedGrids)) then
 				{
-					protectedGrids set [count protectedGrids, [_grid select 0, _grid select 1]];
+					protectedGrids set [count protectedGrids, str _grid];
 				};
 				_grid set [1, (_grid select 1) + 100];
 				_y = _y + 1;
@@ -43,9 +43,10 @@ while{_i != -1} do
 		_i = -1;
 	};
 };
-player sideChat str protectedGrids;
 publicVariable "protectedGrids";
 publicVariable "protectedMkN";
+
+insurgentGrids = [];
 
 readyForClients = true;
 publicVariable "readyForClients";
