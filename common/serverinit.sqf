@@ -27,7 +27,7 @@ while{_i != -1} do
 			{
 				if(!(_grid in protectedGrids)) then
 				{
-					protectedGrids set [count protectedGrids, str _grid];
+					protectedGrids set [count protectedGrids, str _grid]; //We make it a string so the "in" command will work properly
 				};
 				_grid set [1, (_grid select 1) + 100];
 				_y = _y + 1;
@@ -45,6 +45,28 @@ while{_i != -1} do
 };
 publicVariable "protectedGrids";
 publicVariable "protectedMkN";
+
+coloredGrids = [];
+{
+	if(!((typeOf _x) in BADHOUSES)) then
+	{
+		_p = getPosATL _x;
+		_grid = GETGRIDPOS(_p select 0, _p select 1);
+		_protected = (str _grid) in protectedGrids;
+		
+		if(!_protected) then
+		{
+			if(!((str _grid) in coloredGrids)) then
+			{
+				coloredGrids set [count coloredGrids, str _grid];
+			};
+		};
+	};
+} forEach nearestObjects [mapCenter, ["house"], mapRadius];
+{
+	coloredGrids set[_forEachIndex, call compile _x];
+} forEach coloredGrids;
+publicVariable "coloredGrids";
 
 insurgentGrids = [];
 
