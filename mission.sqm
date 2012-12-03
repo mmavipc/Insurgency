@@ -107,6 +107,66 @@ class Mission
 			};
 		};
 	};
+	class Markers
+	{
+		items=6;
+		class Item0
+		{
+			position[]={6000.0239,316.39783,5999.9907};
+			name="map_center";
+			markerType="ELLIPSE";
+			type="Empty";
+			fillName="Border";
+			a=9219;
+			b=9219;
+			drawBorder=1;
+		};
+		class Item1
+		{
+			position[]={7753.1265,296.04001,1653.6873};
+			name="protect0";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=150;
+			b=150;
+		};
+		class Item2
+		{
+			position[]={7903.6157,296.04001,1802.4644};
+			name="protect1";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=200;
+			b=200;
+		};
+		class Item3
+		{
+			position[]={8304.3223,296.04001,1903.9719};
+			name="protect2";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=200;
+			b=200;
+		};
+		class Item4
+		{
+			position[]={8203.4199,296.04001,2003.4431};
+			name="protect3";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=200;
+			b=200;
+		};
+		class Item5
+		{
+			position[]={7953.0464,296.03897,1655.6045};
+			name="protect4";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+	};
 };
 class Intro
 {
