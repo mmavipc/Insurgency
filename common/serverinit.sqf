@@ -1,10 +1,10 @@
 mapCenter = getMarkerPos "map_center";
-"map_center" setMarkerAlpha 0;
 publicVariable "map_center";
 mapRadius = getMarkerSize "map_center" select 0;
 publicVariable "mapRadius";
 
 protectedGrids = [];
+protectedMkN = 0;
 _i = 0;
 while{_i != -1} do
 {
@@ -12,8 +12,8 @@ while{_i != -1} do
 	_p = getMarkerPos _name;
 	if((_p select 0) != 0) then
 	{
+		protectedMkN = protectedMkN + 1;
 		_size = getMarkerSize _name;
-		_name setMarkerAlpha 0;
 		_size = _size select 0;
 		_size = _size / 50;
 		_p set [0, (_p select 0) - (50 * _size)];
@@ -45,6 +45,7 @@ while{_i != -1} do
 };
 player sideChat str protectedGrids;
 publicVariable "protectedGrids";
+publicVariable "protectedMkN";
 
 readyForClients = true;
 publicVariable "readyForClients";

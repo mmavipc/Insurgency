@@ -1,6 +1,9 @@
 loadScreen("Waiting for server...");
 waitUntil {!isNil "readyForClients"};
 loadScreen("Loading...");
+
+"map_center" setMarkerAlpha 0;
+
 {
 	if(!((typeOf _x) in BADHOUSES)) then
 	{
@@ -31,3 +34,11 @@ loadScreen("Loading...");
 		};
 	};
 } forEach nearestObjects [mapCenter, ["house"], mapRadius];
+
+_i = 0;
+while{_i < protectedMkN} do
+{
+	_name = format ["protect%1", _i];
+	_name setMarkerAlpha 0;
+	_i = _i + 1;
+};
