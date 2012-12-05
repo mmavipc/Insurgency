@@ -58,7 +58,10 @@ coloredGrids = [];
 		{
 			if(!((str _grid) in coloredGrids)) then
 			{
-				coloredGrids set [count coloredGrids, str _grid];
+				if(str(_x buildingPos 1) != "[0,0,0]") then
+				{
+					coloredGrids set [count coloredGrids, str _grid];
+				};
 			};
 		};
 	};
